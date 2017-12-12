@@ -1,0 +1,14 @@
+.selecionado {
+	background: blue;
+	color: #fff;
+}li{
+		list-style: square;
+
+}
+li:hover{
+	background: red;
+	transition: 1s;
+	color: #5F9EA0;
+
+}
+
