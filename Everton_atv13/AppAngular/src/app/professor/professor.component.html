@@ -1,0 +1,20 @@
+<hr>
+<div>
+  <label>Nome do Professor:
+    <input #professorNome />
+  </label>
+ 
+  <button (click)="adicionar(professorNome.value); professorNome.value=''">
+    adicionar
+  </button>
+</div>
+<hr>
+<ul class="lista-professores" >
+  <li *ngFor="let professor of professores">
+  	<a routerLink="/professor/{{professor.id}}">
+    <span> {{ professor.id }} </span> {{ professor.nome }} 
+    </a>
+     <button title="Remover professor" (click)="delete(professor)">Remover</button><!-- Botão para remover professor -->
+  </li>
+</ul>
+<hr>
